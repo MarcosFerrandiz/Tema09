@@ -11,6 +11,10 @@ public class ArrayListEstadisticas implements IEstadisticas {
         this.numeros = numeros;
     }
 
+    /**
+     * Metodo que indica el numero mas pequeño de un ArrayList de double
+     * @return Devuelve el double mas pequeño
+     */
     @Override
     public double minimo(){
         double aux = numeros.get(0);
@@ -22,6 +26,10 @@ public class ArrayListEstadisticas implements IEstadisticas {
         return aux;
     }
 
+    /**
+     * Metodo para saber el número mas grande de un ArrayList de double
+     * @return Devuelve el double mas grande del array
+     */
     @Override
     public double maximo(){
         double aux = numeros.get(0);
@@ -33,6 +41,10 @@ public class ArrayListEstadisticas implements IEstadisticas {
         return aux;
     }
 
+    /**
+     * Suma todos los valores de un ArrayList de double
+     * @return Devuelve la suma de todos los valores del ArrayList
+     */
     @Override
     public double sumatorio() {
         double resultado = 0;
@@ -42,6 +54,10 @@ public class ArrayListEstadisticas implements IEstadisticas {
         return resultado;
     }
 
+    /**
+     * Calcula la media de un ArrayList de double
+     * @return Devuelve la media de los valores
+     */
     @Override
     public double media() {
         double resultado = 0;
@@ -51,6 +67,10 @@ public class ArrayListEstadisticas implements IEstadisticas {
         return resultado/ numeros.size();
     }
 
+    /**
+     * Calcula la moda de los valores de un ArrayList de double
+     * @return Devuelve la moda de los valores del ArrayList
+     */
     @Override
     public double moda() {
         Map<Double,Integer> mapaRepeticiones = new HashMap<>();
