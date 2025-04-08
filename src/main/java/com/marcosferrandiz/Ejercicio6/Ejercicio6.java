@@ -74,13 +74,8 @@ public class Ejercicio6 {
      * @return Devuelve la palabra traducida al valenciano
      */
     public static String traducirPalabra(String key){
-        for (Map.Entry<String,String> palabra : diccionario.entrySet()){
-            if (palabra.getKey().equals(key)){
-                return palabra.getValue();
-            }
-        }
-        String nada = "La palabra no existe";
-        return nada;
+        String palabra = diccionario.get(key);
+        return palabra;
     }
 
 }

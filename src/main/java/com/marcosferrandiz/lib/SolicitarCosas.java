@@ -279,7 +279,7 @@ public class SolicitarCosas {
     }
 
     /**
-     * Solicita una fecha al usuario en el formato especificado, validando que no esté en blanco.
+     * Solicita una fecha al usuario en el formato especificado, validando que no esté en blanco. [ dd-MM-yyyy ]
      */
     public static LocalDate solicitarFecha(String mensaje, String formatoFormato) {
         Scanner scanner = new Scanner(System.in);
